@@ -31,9 +31,13 @@ public class Explosion : MonoBehaviour
         Collider[] nearObj = Physics.OverlapSphere(transform.position, explosionRadius);
         foreach (Collider c in nearObj)
         {
-            c.attachedRigidbody.AddExplosionForce(explosionForce, transform.position, explosionRadius);
-            isExploded = true;
-            Debug.Log("KhaaBoom!");
+            if (c != this)
+            {
+                c.attachedRigidbody.AddExplosionForce(explosionForce, transform.position, explosionRadius);
+                Destroy(this.gameObject);
+                Debug.Log("KhaaBoom!");
+            }
+            
         }
 
     }
