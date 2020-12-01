@@ -280,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a1ce1fa64549547a381ee2ad3ae80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPaused: 0
 --- !u!4 &1125915843
 Transform:
   m_ObjectHideFlags: 0
@@ -419,7 +420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 1
   explosionRadius: 10
-  explosionForce: -1000
+  explosionForce: 10000
 --- !u!1 &1516111846
 GameObject:
   m_ObjectHideFlags: 0
