@@ -4,6 +4,8 @@ ScriptsOnlyBuild:
     - CreateCubes
     - Explosion
     - GameManager
+    - PlayerMovement
+    - ThrowGrenade
     - createTower
     - mouseControl
     Unity.Rider.Editor.dll:
@@ -12,6 +14,10 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
   sceneClasses:
     Assets/Scenes/plane.unity:
     - Class: 1
@@ -43,24 +49,46 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12096}
+      Script: {instanceID: 11282}
     - Class: 114
-      Script: {instanceID: 12194}
+      Script: {instanceID: 11480}
     - Class: 114
-      Script: {instanceID: 12794}
+      Script: {instanceID: 11926}
     - Class: 114
-      Script: {instanceID: 17638}
+      Script: {instanceID: 12122}
     - Class: 114
-      Script: {instanceID: 21324}
+      Script: {instanceID: 12220}
     - Class: 114
-      Script: {instanceID: 24808}
+      Script: {instanceID: 12690}
+    - Class: 114
+      Script: {instanceID: 12736}
+    - Class: 114
+      Script: {instanceID: 12822}
+    - Class: 114
+      Script: {instanceID: 13074}
+    - Class: 114
+      Script: {instanceID: 13144}
+    - Class: 114
+      Script: {instanceID: 13354}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 134
+      Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 143
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -257,6 +285,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 62ac959e0f5d20b300896d49009ac24c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovement
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -371,6 +405,12 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: c2e97cbf08efda39c4de7b62128a87b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ThrowGrenade
+  - hash:
+      serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -455,6 +495,12 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
+      Hash: a9cec5743ae0885b5f1073d528a7e589
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: 9726bc46e15d44429bd38fb013657f1e
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
@@ -497,23 +543,17 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: c3d3430df9e3ea95e3e3d587961390fb
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: PlayableTrack
-  - hash:
-      serializedVersion: 2
       Hash: 7cca88585920a225a7027b7384e75e60
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: mouseControl
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManager
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: PlayableTrack
   platform: 5
   scenePathNames:
   - Assets/Scenes/plane.unity
-  playerPath: C:/Users/nikla/unity-3d-test/unity-3d-test/_builds/test4/3d fps.exe
+  playerPath: C:/Users/nikla/unity-3d-test/unity-3d-test/_builds/test5/3d fps.exe

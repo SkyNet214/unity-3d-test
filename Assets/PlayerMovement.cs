@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         {
             yAxis = 1;
         }
-        Vector3 movementVector = transform.right * horizontal + transform.forward * vertical + transform.up * yAxis;
+        Vector3 movementVector = horizontalSpeed * (transform.right * horizontal + transform.forward * vertical) + verticalSpeed * transform.up * yAxis;
         this.GetComponent<CharacterController>().Move(movementVector);
     }
 }

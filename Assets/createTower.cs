@@ -6,7 +6,7 @@ public class createTower : MonoBehaviour
 {
     public GameObject cube;
     public float scaleX = 10f;
-    public static float scaleY = 10f;
+    public float scaleY = 10f;
     public float scaleZ = 10f;
     
 

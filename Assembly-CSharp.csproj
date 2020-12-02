@@ -67,7 +67,8 @@
     <Compile Include="Assets\Explosion.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\ThrowGrenate.cs" />
+    <Compile Include="Assets\ThrowGrenade.cs" />
+    <Compile Include="Assets\TimeBody.cs" />
     <Compile Include="Assets\createTower.cs" />
     <Compile Include="Assets\mouseControl.cs" />
     <Reference Include="UnityEngine">

@@ -13,7 +13,6 @@ public class Explosion : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(0, 15, 0);
         //this.GetComponent<Rigidbody>().useGravity = false;
     }
 
@@ -27,6 +26,11 @@ public class Explosion : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        Explode();
+    }
+
     void Explode()
     {
         Collider[] nearObj = Physics.OverlapSphere(transform.position, explosionRadius);
@@ -34,14 +38,18 @@ public class Explosion : MonoBehaviour
         {
             foreach (Collider c in nearObj)
             {
-                if (c.tag == "Cube")
+                if (c.tag !=  "Player")
                 {
-                    c.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, this.transform.position, explosionRadius);
-                    Destroy(this.gameObject);
-                    Debug.Log("KhaaBoom!");
+                    Rigidbody rb = c.GetComponent<Rigidbody>();
+                    if (rb != null)
+                    {
+                        rb.AddExplosionForce(explosionForce, this.transform.position, explosionRadius);
+                    }
                 }
 
             }
+            Destroy(this.gameObject);
+            Debug.Log("KhaaBoom!");
         }
     }
 }
