@@ -63,14 +63,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CreateCubes.cs" />
-    <Compile Include="Assets\Explosion.cs" />
-    <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\ThrowGrenade.cs" />
-    <Compile Include="Assets\TimeBody.cs" />
-    <Compile Include="Assets\createTower.cs" />
-    <Compile Include="Assets\mouseControl.cs" />
+    <Compile Include="Assets\Scripts\CreateCubes.cs" />
+    <Compile Include="Assets\Scripts\DisplayExplosionForce.cs" />
+    <Compile Include="Assets\Scripts\Explosion.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Position.cs" />
+    <Compile Include="Assets\Scripts\ThrowGrenade.cs" />
+    <Compile Include="Assets\Scripts\TimeBody.cs" />
+    <Compile Include="Assets\Scripts\createTower.cs" />
+    <Compile Include="Assets\Scripts\mouseControl.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
