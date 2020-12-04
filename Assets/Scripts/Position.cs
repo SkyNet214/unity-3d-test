@@ -7,8 +7,9 @@ public class Position
     Vector3 postion;
     Quaternion rotation;
     
-    Position()
+    Position(Vector3 position, Quaternion rotation)
     {
+       
 
     }
 }
